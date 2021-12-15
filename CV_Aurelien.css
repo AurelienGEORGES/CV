@@ -1,0 +1,82 @@
+@font-face {
+    font-family: "whitneymedium";
+    src: url("whitneymedium.woff") format("woff");
+}
+
+body {
+    font-family: "whitneymedium", Helvetica, Arial, sans-serif;
+    width: 60%;
+}
+
+.grilleTotale {
+    display: grid;
+    grid-template-columns: 70% 30%; 
+}
+
+.grilleGauche {
+    display: grid;
+}
+.grilleDroite {
+    display: grid;
+    margin-left: 3px;
+    background-color: rgba(10, 171, 192, 0.945);
+    border-radius: 5px;
+}
+
+@media (max-width: 1200px) { 
+    .grilleTotale {
+        grid-template-columns: 100%; 
+    }   
+}
+
+h1 {
+    font-style: oblique;
+    color: rgb(5, 50, 134);
+    background-image: radial-gradient(rgba(24, 92, 219, 0.2), rgba(45, 53, 163, 0.945));
+    border: solid black 3px;
+    text-align: center;
+}
+
+h4 {
+    text-align: center;
+}
+
+.listeParcours {
+    list-style-type: square;
+}
+
+.listeExperiences {
+    list-style-type: circle;
+}
+
+.listeCompetences {
+    list-style-type: disc;
+}
+
+h2, h3 {
+    color: rgb(5, 50, 134);
+}
+
+.photo {
+    width: 50%;
+    height: auto;
+    margin-top: 5px;
+    margin-left: 5px
+}
+
+.coordonnes {
+    margin-left: 3px;
+ }
+
+.hardSkills {
+    margin-left: 3px;
+}
+
+.softSkills {
+    margin-left: 3px;
+ }
+
+.hobbies {
+    margin-left: 3px;
+ }
+
