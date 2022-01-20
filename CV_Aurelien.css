@@ -5,12 +5,15 @@
 
 body {
     font-family: "whitneymedium", Helvetica, Arial, sans-serif;
-    width: 60%;
+    position: relative;
 }
 
 .grilleTotale {
+    position: absolute;
     display: grid;
-    grid-template-columns: 70% 30%; 
+    grid-template-columns: 60% 40%; 
+    left: 20%;
+    right: 20%;
 }
 
 .grilleGauche {
@@ -19,8 +22,9 @@ body {
 .grilleDroite {
     display: grid;
     margin-left: 3px;
-    background-color: rgba(10, 171, 192, 0.945);
+    background-image: radial-gradient(rgba(24, 92, 219, 0.2), rgba(45, 53, 163, 0.945));
     border-radius: 5px;
+    border: solid black 1px;
 }
 
 @media (max-width: 1200px) { 
@@ -43,14 +47,17 @@ h4 {
 
 .listeParcours {
     list-style-type: square;
+    font-size: 1.3rem;
 }
 
 .listeExperiences {
     list-style-type: circle;
+    font-size: 1.3rem;
 }
 
 .listeCompetences {
     list-style-type: disc;
+    font-size: 1.3rem;
 }
 
 h2, h3 {
@@ -58,25 +65,85 @@ h2, h3 {
 }
 
 .photo {
-    width: 50%;
+    width: 230px;
     height: auto;
     margin-top: 5px;
-    margin-left: 5px
+    margin-bottom: 5px;
+}
+
+#alignePhotoCentre {
+    display: flex;
+    justify-content: center;
+}
+
+.aligneLogoFormation {
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    list-style: none;
+    background-color: white;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+}
+
+#customLienCodeCademy {
+    width: 50px;
+}
+
+#customLienOpenClassRoom {
+    width: 50px;
+}
+
+#customLienSoloLearn {
+    width: 50px;
+}
+
+#customLienLinkedIn {
+    width: 50px;
+}
+
+#customLienGitHub {
+    width: 50px;   
 }
 
 .coordonnes {
-    margin-left: 3px;
- }
+    margin-top: 5px;
+    text-align: center;
+}
+
+.coordonnes p {
+    margin-top: -10px;
+}
+
+.hardSkillsTitre {
+    text-align: center;
+}
 
 .hardSkills {
     margin-left: 3px;
+    display: flex;
+    justify-content: center;
+}
+
+.hardSkills td {
+    text-align: right;
 }
 
 .softSkills {
+    text-align: center;
     margin-left: 3px;
  }
+
+.softSkills p {
+    margin-top: -10px;
+}
 
 .hobbies {
+    text-align: center;
     margin-left: 3px;
- }
+}
 
+.hobbies p {
+    margin-top: -10px;
+}
